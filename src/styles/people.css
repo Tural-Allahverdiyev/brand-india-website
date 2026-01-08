@@ -88,7 +88,6 @@
 @media (max-width: 1200px) {
   .peopleRow,
   .peopleRow--reverse {
-    flex-direction: column;
     grid-template-columns: 1fr;
   }
 
@@ -104,11 +103,12 @@
   .peopleTextBox.center {
     justify-content: flex-start;
   }
-}
 
-@media (max-width: 768px) {
-  .peopleRow,
-  .peopleRow--reverse {
-    flex-direction: column;
+  /* ✅ Mobil-də həmişə: şəkil yuxarı, yazı aşağı */
+  .peopleImageWrap {
+    order: 1;
+  }
+  .peopleTextBox {
+    order: 2;
   }
 }

@@ -84,69 +84,30 @@
   transform: scale(0.97);
 }
 
-/* ===== MOBILE: People page fix (stack everything) ===== */
-@media (max-width: 900px) {
-  /* page padding */
-  .peoplePage {
-    padding: 50px 0;
-  }
-
-  /* title */
-  .peopleTitle {
-    font-size: 36px;
-    margin: 0 0 28px;
-    text-align: left;
-  }
-
-  /* force single column for both rows */
+/* Responsive */
+@media (max-width: 1200px) {
   .peopleRow,
   .peopleRow--reverse {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 18px !important;
-    margin-bottom: 40px !important;
-    align-items: start !important;
+    grid-template-columns: 1fr;
   }
 
-  /* image wrap full width */
-  .peopleImageWrap {
-    width: 100% !important;
-    height: 320px !important;
-    border-radius: 20px !important;
-  }
-
-  .peopleImage {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-  }
-
-  /* text box full width under image */
+  .peopleImageWrap,
   .peopleTextBox {
-    width: 100% !important;
-    text-align: left !important;
+    width: 100%;
   }
 
-  /* make text readable */
-  .peopleName {
-    font-size: 20px !important;
-    font-weight: 600 !important;
-    margin: 0 0 10px !important;
+  .peopleImageWrap {
+    height: 420px;
   }
 
-  .peopleText {
-    font-size: 14px !important;
-    font-weight: 500 !important;
-    line-height: 1.6 !important;
-    margin: 0 0 14px !important;
+  .peopleTextBox.center {
+    justify-content: flex-start;
   }
+}
 
-  /* button aligned left (or center if you want) */
-  .readMoreBtn {
-    width: 203px !important;
-    height: 48px !important; /* hündürlük az */
-    border-radius: 40px !important;
-    border: 2px solid #111 !important;
-    margin: 0 !important;
+@media (max-width: 768px) {
+  .peopleRow,
+  .peopleRow--reverse {
+    flex-direction: column;
   }
 }

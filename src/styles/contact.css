@@ -1,0 +1,149 @@
+/* =========================
+   CONTACT – CLEAN RESET
+========================= */
+
+.contact__container {
+  padding: 10px 0;
+}
+
+.contact__card {
+  max-width: 980px;
+  margin: 0 auto;
+  /* padding: 50px; */
+  background: #fff;
+  border: none;
+  box-shadow: none;
+}
+
+/* =========================
+   TITLES
+========================= */
+
+.contact__title {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 0 0 60px;
+}
+
+.contact__title span {
+  color: #6aa84f;
+}
+
+/* My project is...  & Project Budget */
+.contact__label {
+  font-size: 26px;
+  font-weight: 500;
+  margin: 40px 0;
+}
+
+/* =========================
+   CHIPS
+========================= */
+
+.contact__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.chip {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  cursor: pointer;
+}
+
+.chip.is-active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.contact__field span {
+  display: none;
+}
+
+.contact__field {
+  margin-bottom: 32px;
+}
+
+.contact__field input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 25px 0;
+  font-size: 16px;
+  outline: none;
+}
+
+.contact__field textarea {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 18px;
+  margin-top: 40px;
+  font-size: 20px;
+  resize: vertical;
+}
+
+.contact__field input::placeholder,
+.contact__field textarea::placeholder {
+  color: #bdbdbd;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* =========================
+   ALERT
+========================= */
+
+.contact__alert {
+  margin: 24px 0;
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.contact__alert.success {
+  background: #eef8ee;
+  color: #1f6d1f;
+}
+
+.contact__alert.error {
+  background: #fff1f1;
+  color: #8a1f1f;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.contact__submit {
+  margin-top: 35px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.contact__submit span {
+  margin-left: 8px;
+}
+
+.contact__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

@@ -1,0 +1,137 @@
+.orange {
+  color: #e46a2a;
+}
+
+/* ================= HERO (AĞ) ================= */
+.aboutHero {
+  padding: 80px 0 40px;
+  background: #ffffff;
+}
+
+.aboutHero__inner {
+  text-align: center;
+}
+
+.aboutHero__title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 16px;
+}
+
+.aboutHero__sub {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0 0 36px;
+}
+
+.aboutHero__image {
+  max-width: 960px;
+  margin: 0 auto 32px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.aboutHero__image img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.aboutHero__desc {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ================= WHAT WE CAN DO (BOZ) ================= */
+.aboutContent {
+  background-color: #f5f5f5; /* BOZ FULL-WIDTH */
+  padding: 60px 0;
+}
+
+.aboutContent__title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0 0 32px;
+}
+
+.aboutContent__text {
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.aboutContent__text p {
+  margin: 0 0 18px;
+}
+
+/* ================= IMAGES (AĞ FULL-WIDTH) ================= */
+.aboutImagesSection {
+  background: #ffffff; /* ✅ TAM SOLDAN SAĞA AĞ */
+  padding: 60px 0 80px;
+}
+
+.aboutImagesRow {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.aboutImgSmall,
+.aboutImgLarge {
+  border-radius: 22px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.aboutImgSmall {
+  height: 550px;
+}
+
+.aboutImgLarge {
+  height: 550px;
+}
+
+.aboutImgSmall img,
+.aboutImgLarge img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sponsors__title {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 40px;
+}
+
+.sponsors__carousel {
+  margin-top: 64px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .aboutImagesRow {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .aboutImgSmall,
+  .aboutImgLarge {
+    height: 260px;
+  }
+}

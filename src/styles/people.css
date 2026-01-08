@@ -88,6 +88,7 @@
 @media (max-width: 1200px) {
   .peopleRow,
   .peopleRow--reverse {
+    flex-direction: column;
     grid-template-columns: 1fr;
   }
 

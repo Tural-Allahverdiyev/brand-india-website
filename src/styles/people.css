@@ -84,23 +84,49 @@
   transform: scale(0.97);
 }
 
-/* Responsive */
-@media (max-width: 1200px) {
-  .peopleRow,
-  .peopleRow--reverse {
-    grid-template-columns: 1fr;
+/* ===== MOBILE FIX ===== */
+@media (max-width: 768px) {
+  .peopleGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
   }
 
-  .peopleImageWrap,
-  .peopleTextBox {
+  .personCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .personCard__media {
     width: 100%;
   }
 
-  .peopleImageWrap {
-    height: 420px;
+  .personCard__media img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
   }
 
-  .peopleTextBox.center {
-    justify-content: flex-start;
+  .personCard__body {
+    margin-top: 20px;
+    max-width: 90%;
+  }
+
+  .personCard__name {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  .personCard__text {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .personCard__btn {
+    margin: 0 auto;
   }
 }
